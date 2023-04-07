@@ -1,6 +1,6 @@
 from functools import partial
 
-from ..common.coco_loader_lsj_1280 import dataloader
+from ..common.coco_loader_lsj import dataloader
 from .cascade_mask_rcnn_vitdet_b_100ep import (
     # dataloader,
     lr_multiplier,
