@@ -12,19 +12,19 @@ from .cascade_mask_rcnn_vitdet_b_100ep import (
 
 dataloader.train.total_batch_size = 64
 
-model.backbone.net.beit_like_qkv_bias = True
-model.backbone.net.beit_like_gamma = False
-model.backbone.net.freeze_patch_embed = True
-model.backbone.square_pad = 1280
-model.backbone.net.img_size = 1280
-model.backbone.net.patch_size = 16
-model.backbone.net.window_size = 16
-model.backbone.net.embed_dim = 1408
-model.backbone.net.depth = 40
-model.backbone.net.num_heads = 16
-model.backbone.net.mlp_ratio = 6144 / 1408
-model.backbone.net.use_act_checkpoint = True
-model.backbone.net.drop_path_rate = 0.6  # 0.5 --> 0.6
+#model.backbone.net.beit_like_qkv_bias = True
+#model.backbone.net.beit_like_gamma = False
+#model.backbone.net.freeze_patch_embed = True
+#model.backbone.square_pad = 1280
+#model.backbone.net.img_size = 1280
+#model.backbone.net.patch_size = 16
+#model.backbone.net.window_size = 16
+#model.backbone.net.embed_dim = 1408
+#model.backbone.net.depth = 40
+#model.backbone.net.num_heads = 16
+#model.backbone.net.mlp_ratio = 6144 / 1408
+#model.backbone.net.use_act_checkpoint = True
+#model.backbone.net.drop_path_rate = 0.6  # 0.5 --> 0.6
 # global attention for every 4 blocks
 model.backbone.net.window_block_indexes = (
     list(range(0, 3)) + list(range(4, 7)) + list(range(8, 11)) + list(range(12, 15)) + list(range(16, 19)) +
